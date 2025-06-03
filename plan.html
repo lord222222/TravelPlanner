@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Plan Trip</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Pacifico&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="page-container">
+    <header>
+      <h1><i class="fas fa-map-marked-alt"></i> Plan a Trip</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="plan.html">Plan Trip</a>
+        <a href="trips.html">My Trips</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <form id="tripForm">
+        <h2><i class="fas fa-plane-departure"></i> Trip Details</h2>
+
+        <label>
+          <h4>Destination:</h4>
+          <input type="text" id="destination" required>
+        </label>
+
+        <label>
+          <h4>Country:</h4>
+          <input type="text" id="country" required>
+        </label>
+
+        <label>
+          <h4>Date:</h4>
+          <input type="date" id="date" required>
+        </label>
+
+        <label>
+          <h4>Duration (days):</h4>
+          <input type="number" id="duration" required min="1">
+        </label>
+
+        <label>
+          <h4>Estimated Budget ($):</h4>
+          <input type="number" id="budget" required min="0">
+        </label>
+
+        <label>
+          <h4>Travel Type:</h4>
+          <select id="type">
+            <option>Adventure</option>
+            <option>Relaxation</option>
+            <option>Cultural</option>
+            <option>Road Trip</option>
+          </select>
+        </label>
+
+        <label>
+          <h4>Notes:</h4>
+          <textarea id="notes" placeholder="Additional info..."></textarea>
+        </label>
+
+        <button type="submit" class="btn"><i class="fas fa-save"></i> Save Trip</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Travel Planner</p>
+    </footer>
+  </div>
+
+</body>
+
+</html>
